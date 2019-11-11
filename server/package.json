@@ -1,0 +1,16 @@
+{
+  "name": "dictionary-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r dotenv/config server.js"
+  },
+  "author": "Iván Herrero",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cors": "^2.8.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.14.0"
+  }
+}
