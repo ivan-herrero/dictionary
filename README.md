@@ -13,6 +13,7 @@ Visit at: https://dictionary-app-vue.herokuapp.com/.
 - [Axios](https://github.com/axios/axios)
 - [FontAwesome](https://fontawesome.com/)
 - [lodash.debounce](https://www.npmjs.com/package/lodash.debounce)
+- [Oxford Dictionaries API](https://developer.oxforddictionaries.com/)
 
 # Deployment
 
