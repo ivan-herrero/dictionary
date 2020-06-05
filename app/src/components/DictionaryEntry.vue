@@ -6,7 +6,12 @@
         class="spelling-text"
         v-if="entry.pronunciations"
       >{{entry.pronunciations[0].phoneticSpelling}}</span>
-      <FontAwesomeIcon class="spelling-audio" :icon="icon" @click="playAudio" />
+      <FontAwesomeIcon
+        v-if="entry.pronunciations"
+        class="spelling-audio"
+        :icon="icon"
+        @click="playAudio"
+      />
       <audio
         ref="audioPlayer"
         v-if="entry.pronunciations"
