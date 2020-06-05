@@ -2,9 +2,16 @@
   <div class="dictionary-entry" v-if="entry">
     <div class="header">
       <h1 class="word">{{entry.word}}</h1>
-      <span class="spelling-text">{{entry.pronunciations[0].phoneticSpelling}}</span>
+      <span
+        class="spelling-text"
+        v-if="entry.pronunciations"
+      >{{entry.pronunciations[0].phoneticSpelling}}</span>
       <FontAwesomeIcon class="spelling-audio" :icon="icon" @click="playAudio" />
-      <audio ref="audioPlayer" v-bind:src="entry.pronunciations[0].audioFile"></audio>
+      <audio
+        ref="audioPlayer"
+        v-if="entry.pronunciations"
+        v-bind:src="entry.pronunciations[0].audioFile"
+      ></audio>
     </div>
     <div class="subheader">
       <span>{{entry.lexicalCategory}}</span>
