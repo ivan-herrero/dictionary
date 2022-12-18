@@ -2,8 +2,6 @@
 
 Simple English dictionary to find definitions, examples and pronunciations.
 
-Visit at: https://dictionary-app-vue.herokuapp.com/.
-
 # Tech used
 
 - [Vue.js](https://vuejs.org/)
